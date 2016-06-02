@@ -1,0 +1,22 @@
+{
+  "name": "gne",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "node-inspector": "^0.12.8"
+  },
+  "scripts": {
+    "debug": "node-debug index.js"
+  },
+  "bin": {
+    "gne": "cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
