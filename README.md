@@ -1,6 +1,6 @@
 # gne
 
-A Node.js package that display current git user name and email.
+A Node.js package that display git user name and email in current directory.
 
 ## Install
 
