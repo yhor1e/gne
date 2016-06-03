@@ -5,19 +5,31 @@
 
 'use strict'
 
+const exec = require('child_process').exec
+const clc = require('cli-color')
+
 module.exports = function gne() {
 
-  const exec = require('child_process').exec;
+  function execPromise(cmd) {
+    return new Promise(function(resolve, reject){
+      exec(cmd, function(err, stdout, stderr){
+        if(err){
+          reject(stderr)
+        }
+        resolve(stdout)
+      })
+    })
+  }
 
-  exec('git config -l', function(err, stdout, stderr){
-
-    const name = stdout.match(/user.name=.+/i)[0].split('=')[1]
-    const email = stdout.match(/user.email=.+/i)[0].split('=')[1]
-
-    console.log( `current git user is '${name} <${email}>' `)
-
-    if (err) {
-      console.log(err);
+  Promise.all([
+    execPromise('git config user.name'),
+    execPromise('git config user.email')
+  ]).then(
+    function(stdouts){
+      console.log(clc.red(stdouts[0].trim(), '<' + stdouts[1].trim() + '>'), 'is git user in current directory.')
+    },
+    function(stderr){
+      console.log(stderr)
     }
-  });
+  )
 }
