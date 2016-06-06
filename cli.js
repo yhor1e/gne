@@ -2,5 +2,16 @@
 
 'use strict'
 
-const gne = require('./index')
+const fs = require('fs'),
+      minimist = require('minimist'),
+      gne = require('./index')
+
+var argv = minimist(process.argv.slice(2), {
+    alias: {h: 'help' }
+});
+if (argv.help) {
+    fs.createReadStream(__dirname + '/usage.txt').pipe(process.stdout);
+    return;
+}
+
 gne()

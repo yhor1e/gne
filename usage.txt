@@ -1,0 +1,29 @@
+A Node.js package that display git user name and email in current directory.
+
+USAGE is:
+
+  $ gne
+
+OPTION is:
+
+  -h, --help   print this
+
+CHEAT SHEET is:
+
+  Setting local name and email.
+
+    example:
+    $ git config --local user.name foo
+    $ git config --local user.email "bar@baz.qux"
+
+  Fix name and email to a previous commit.
+
+    example:
+    $ git commit --amend --author "foo <bar@baz.qux>"
+
+  Fix name and email to a specific commit interactivity.
+
+    example:
+    $ git rebase -i HEAD^^
+    $ git commit --amend --author="foor <bar@baz.qux>"
+    $ git rebase --continue
