@@ -18,7 +18,16 @@
   "bin": {
     "gne": "cli.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "git",
+    "user",
+    "name",
+    "email"
+  ],
+  "author": "yhorie <yuk.horie@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhor1e/gne.git"
+  },
   "license": "MIT"
 }
