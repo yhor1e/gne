@@ -20,7 +20,7 @@ $ gne {OPTIONS}
 
 OPTIONS:
 
-  -v, --version   Display version
+  -v, --version   Display version  
   -h, --help      Display this info
 
 ## License
