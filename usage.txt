@@ -25,5 +25,5 @@ CHEAT SHEET is:
 
     example:
     $ git rebase -i HEAD^^
-    $ git commit --amend --author="foor <bar@baz.qux>"
+    $ git commit --amend --author="foo <bar@baz.qux>"
     $ git rebase --continue
