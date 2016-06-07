@@ -4,14 +4,14 @@
 
 const fs = require('fs'),
       minimist = require('minimist'),
-      gne = require('./index')
+      gne = require('.')
 
 var argv = minimist(process.argv.slice(2), {
     alias: {h: 'help' }
 });
 if (argv.help) {
     fs.createReadStream(__dirname + '/usage.txt').pipe(process.stdout);
-    return;
+    return
 }
 
 gne()

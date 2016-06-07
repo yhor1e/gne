@@ -29,7 +29,7 @@ module.exports = function gne() {
       console.log(clc.red(stdouts[0].trim(), '<' + stdouts[1].trim() + '>'), 'is git user in current directory.')
     },
     function(stderr){
-      console.log(stderr)
+      console.error(stderr)
     }
   )
 }
