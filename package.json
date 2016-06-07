@@ -29,5 +29,8 @@
     "type": "git",
     "url": "git+https://github.com/yhor1e/gne.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "ignore" : [
+    ".*"
+  ]
 }
