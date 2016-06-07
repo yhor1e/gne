@@ -1,14 +1,15 @@
 A Node.js package that display git user name and email in current directory.
 
-USAGE is:
+usage:
 
-  $ gne
+  $ gne {OPTIONS}
 
-OPTION is:
+OPTIONS:
 
-  -h, --help   print this
+  -v, --version   Display version
+  -h, --help      Display this info
 
-CHEAT SHEET is:
+cheatsheet:
 
   Setting local name and email.
 

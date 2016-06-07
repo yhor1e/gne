@@ -12,11 +12,16 @@ A Node.js package that display git user name and email in current directory.
 npm i gne -g
 ```
 
-# Usage
+## Usage
 
 ```
-% gne
+$ gne {OPTIONS} 
 ```
+
+OPTIONS:
+
+  -v, --version   Display version
+  -h, --help      Display this info
 
 ## License
 
