@@ -6,7 +6,6 @@
 'use strict'
 
 const exec = require('child_process').exec
-const clc = require('cli-color')
 
 module.exports = function gne() {
 
@@ -26,7 +25,7 @@ module.exports = function gne() {
     execPromise('git config user.email')
   ]).then(
     function(stdouts){
-      console.log(clc.red(stdouts[0].trim(), '<' + stdouts[1].trim() + '>'), 'is git user in current directory.')
+      console.log(stdouts[0].trim(), '<' + stdouts[1].trim() + '>', '\n is git user in current directory.')
     },
     function(stderr){
       console.error(stderr)
