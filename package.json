@@ -28,5 +28,9 @@
     "type": "git",
     "url": "git+https://github.com/yhor1e/gne.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "files":[
+    "usage.txt",
+    "cli.js"
+  ]
 }
